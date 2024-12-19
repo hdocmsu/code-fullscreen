@@ -15,10 +15,13 @@ pre .fullscreen-button {
   top: 0;
   right: 30px;
   border: 0;
-  margin-top: 7px;
+  margin-top: 0px;
   margin-right: 5px;
-  background-color: transparent;
+  background-color: var(--bs-code-color);
   display: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.4rem 0.0rem 0.4rem;
 }
 
 div#fullscreen-box pre .fullscreen-button {
@@ -73,15 +76,11 @@ div#fullscreen-box {
   width: 100vw;
   height: 100svmax;
   display: none;
-  background-color: rgba(233,236,239);
+  background-color: var(--bs-body-bg);
 }
 
 div#fullscreen-box.visible{
     display: block;
-}
-
-div#fullscreen-box pre.sourceCode {
-  background-color: rgba(233,236,239);
 }
 
 div#fullscreen-box code {
